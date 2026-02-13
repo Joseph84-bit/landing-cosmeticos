@@ -44,24 +44,381 @@ const telefonoWhatsApp = "5215512345678"; // ← TU NÚMERO
 const productos = [
   // 🔴 Si agotado = true → se muestra "AGOTADO" y se desactiva WhatsApp
   {
-    nombre: "Labial Matte",
-    descripcion: "Color intenso y larga duración",
-    precio: "$199 MXN",
-    imagen: "imagenes/labial.jpg",
+    nombre: "Toallas Humedas Celavi",
+    descripcion: "Toallitas Limpiadoras Desmaquillantes",
+    precio: "$50 MXN",
+    imagen: "imagenes/toallas.jpg",
     agotado: false
   },
   {
-    nombre: "Base Líquida",
-    descripcion: "Cobertura natural todo el día",
-    precio: "$349 MXN",
-    imagen: "imagenes/base.jpg",
-    agotado: true
+    nombre: "Pasadores para Cabello by apple 90pzas",
+    descripcion: "Color Negro pasador metálico con punta de goma",
+    precio: "$30 MXN",
+    imagen: "imagenes/pasador1.jpg",
+    agotado: false
   },
   {
-    nombre: "Paleta de Sombras",
-    descripcion: "Colores vibrantes",
-    precio: "$499 MXN",
-    imagen: "imagenes/sombras.jpg",
+    nombre: "Pasadores para Cabello by apple 50pzas",
+    descripcion: "Color Negro pasador metálico con punta de goma",
+    precio: "$15 MXN",
+    imagen: "imagenes/pasador2.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Face Serum Facial",
+    descripcion: "Suero facial fórmula con aceite de semilla de cáñamo y aloe vera para nutrir la piel",
+    precio: "$120 MXN",
+    imagen: "imagenes/suerofacial.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Aceite 4 en 1 Marca Prosa",
+    descripcion: "Aceite para crecer y alargar sus pestañas",
+    precio: "$65 MXN",
+    imagen: "imagenes/aceiteprosa.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Lamina Antibrillo Marca Bausse 50pzas",
+    descripcion: "Mantenga limpio el maquillaje",
+    precio: "$30 MXN",
+    imagen: "imagenes/lamina.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rimel Marca Prosa",
+    descripcion: "Formula Contra Agua",
+    precio: "$45 MXN",
+    imagen: "imagenes/rimelprosa.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Borla Duo Ananda",
+    descripcion: "Esponja de Belleza",
+    precio: "$50 MXN",
+    imagen: "imagenes/esponja.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Ligas Latex 200pzas",
+    descripcion: "Ligas para el cabello, alta resistencia",
+    precio: "$15 MXN",
+    imagen: "imagenes/ligas.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Mini Blending Sponge 10pzas",
+    descripcion: "Mini Esponjas para todo tipo de piel",
+    precio: "$10 MXN",
+    imagen: "imagenes/miniblending.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Puff Borla Amor 2pzas",
+    descripcion: "Borlas para maquillaje en polvo",
+    precio: "$50 MXN",
+    imagen: "imagenes/puffborla.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Perfilador Cala",
+    descripcion: "Perfilador de Cejas",
+    precio: "$50 MXN",
+    imagen: "imagenes/perfilador.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Parches para Espinillas 36pzas",
+    descripcion: "Ayuda a reducir la apariencia de granitos",
+    precio: "$59 MXN",
+    imagen: "imagenes/parches.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Eyelash Rizador Amor",
+    descripcion: "Rizador de pestañas",
+    precio: "$60 MXN",
+    imagen: "imagenes/rizadoramor.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Pomada y Sombra para Ceja Ananda",
+    descripcion: "Peina, rellena y define ideal para darle forma a tus cejas",
+    precio: "$99 MXN",
+    imagen: "imagenes/pomadaysombra.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rubor Bissu 11 Bronce",
+    descripcion: "Fórmula con excelente pigmentación y textura suave que se difumina facilmente sobre tu rostro",
+    precio: "$59 MXN",
+    imagen: "imagenes/rubor11bronce.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rubor Bissu 04 Natural",
+    descripcion: "Fórmula con excelente pigmentación y textura suave que se difumina facilmente sobre tu rostro",
+    precio: "$59 MXN",
+    imagen: "imagenes/rubor04natural.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rubor Bissu 16 Rosa",
+    descripcion: "Fórmula con excelente pigmentación y textura suave que se difumina facilmente sobre tu rostro",
+    precio: "$59 MXN",
+    imagen: "imagenes/rubor16rosa.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rubor Bissu 02 Arena",
+    descripcion: "Fórmula con excelente pigmentación y textura suave que se difumina facilmente sobre tu rostro",
+    precio: "$59 MXN",
+    imagen: "imagenes/rubor02arena.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rubor Bissu 20 Coral",
+    descripcion: "Fórmula con excelente pigmentación y textura suave que se difumina facilmente sobre tu rostro",
+    precio: "$59 MXN",
+    imagen: "imagenes/rubor20coral.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rubor Bissu Efecto Bronceado",
+    descripcion: "Bronceador en polvo compacto con formula ligera y sedosa",
+    precio: "$59 MXN",
+    imagen: "imagenes/bronceadorbissu.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Pinta Canas Colorton",
+    descripcion: "Cubre canas y raiz Color Chocolate para Dama y Caballero",
+    precio: "$70 MXN",
+    imagen: "imagenes/pintacanas.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rizador Beauty Creations",
+    descripcion: "Rizador de pestañas",
+    precio: "$59 MXN",
+    imagen: "imagenes/rizadorcreations.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Exfoliante Corporal Beauty Creations",
+    descripcion: "Disponibles en sabor Mango y Durazno",
+    precio: "$130 MXN",
+    imagen: "imagenes/exfoliantebc.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Labial Italia Mate",
+    descripcion: "Disponibles en varios colores",
+    precio: "$40 MXN",
+    imagen: "imagenes/labialitaliam.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Lapiz de Labios Beauty Creations",
+    descripcion: "Disponibles en varios colores",
+    precio: "$30 MXN",
+    imagen: "imagenes/lapizbc.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Lapiz de Labios Ananda",
+    descripcion: "Disponibles en varios colores",
+    precio: "$30 MXN",
+    imagen: "imagenes/lapizananda.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Gloss Lip Bissu",
+    descripcion: "Humectante, nutritivo, no graso, difuminador",
+    precio: "$90 MXN",
+    imagen: "imagenes/lipoilbissu.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Plumin PinkUp",
+    descripcion: "Plumon delineador de larga duración",
+    precio: "$130 MXN",
+    imagen: "imagenes/pluminpu.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Gel para Ceja And Cosmetics",
+    descripcion: "Color Café Oscuro, formula a prueba de agua, no mancha, larga duración",
+    precio: "$50 MXN",
+    imagen: "imagenes/geland.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Corrector Liquido Bissu",
+    descripcion: "Sin parabenos, sin fragancias, sin aceites",
+    precio: "$69 MXN",
+    imagen: "imagenes/corrector_liq_bissu.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Ola Planchado Express",
+    descripcion: "Colageno, argan, recino y vitaminas",
+    precio: "$120 MXN",
+    imagen: "imagenes/olaexpress.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Esponja Cala 6pzas",
+    descripcion: "Esponjas triangulares",
+    precio: "$50 MXN",
+    imagen: "imagenes/esponjacala.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Sacapuntas doble con Tapa Ananda",
+    descripcion: "Diseño compacto y práctico, perfecto para uso profesional",
+    precio: "$22 MXN",
+    imagen: "imagenes/sacapuntasdoble.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Fijador de Maquillaje PinkUp",
+    descripcion: "Hidrata y refresca la piel",
+    precio: "$139 MXN",
+    imagen: "imagenes/fijadorpinkup.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Limpiador de Brochas PinkUp",
+    descripcion: "Limpia y desinfecta brochas",
+    precio: "$150 MXN",
+    imagen: "imagenes/limpiadorpinkup.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Smoky 2 en 1",
+    descripcion: "Kit de sombra negra para ojos y cejas 2 en 1",
+    precio: "$110 MXN",
+    imagen: "imagenes/smoky2&1.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Pestañas Uno Kiki",
+    descripcion: "Son la elección perfecta para quienes buscan un look natural y elegante",
+    precio: "$50 MXN",
+    imagen: "imagenes/pestañaskiki.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Pinzas para Ceja by apple",
+    descripcion: "Pinza depiladora",
+    precio: "$20 MXN",
+    imagen: "imagenes/pinzadepiapple.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Locion Astringente PinkUp",
+    descripcion: "Limpia profundamente los poros, elimina y controla el exceso de grasa de la piel",
+    precio: "$150 MXN",
+    imagen: "imagenes/locionpinkup.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Brillo Br Lip Glow",
+    descripcion: "Hidrata y humecta tus labios con un aroma frutal",
+    precio: "$25 MXN",
+    imagen: "imagenes/brillobrlip.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Brillo Lip Italia Deluxe",
+    descripcion: "Brillo labial fruta loca",
+    precio: "$25 MXN",
+    imagen: "imagenes/brillofrutaloca.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Espejo Celavi",
+    descripcion: "Espejo rectangular de escritorio",
+    precio: "$110 MXN",
+    imagen: "imagenes/espejocelavi.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Paleta Contorneador Bissu",
+    descripcion: "Estas paletas te permitirán resaltar lo mejor de tus facciones",
+    precio: "$149 MXN",
+    imagen: "imagenes/pcontorneador.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Fragancia Coco-Vainilla Hair+Body Mist PinkUp",
+    descripcion: "Fragancia dulce y reconfortante con notas cálidas de coco, vainilla cremosa y caramelo suave",
+    precio: "$120 MXN",
+    imagen: "imagenes/cocovpinkup.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Fragancia Pink Scent Hair+Body Mist PinkUp",
+    descripcion: "Composición femenina y moderna con ciruela, maracuyá, peonía, flor de durazno, almizcle blanco y maderas rubias",
+    precio: "$120 MXN",
+    imagen: "imagenes/pinkscent.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Fragancia Mon Paris Hair+Body Mist PinkUp",
+    descripcion: "Notas sofisticadas de fresa, frambuesa, pera, peonía, jazmín y un fondo de pachulí, almizcle y madera. Elegante y romántico",
+    precio: "$120 MXN",
+    imagen: "imagenes/montparis.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Polvo Traslucido Bissu 07 Zicatela Bissu",
+    descripcion: "Fórmula en polvo ultra fina y liviana, que se aplica suavemente, minimiza el brillo y lineas de expresión. Deja un acabado mate aterciopelado al rostro.",
+    precio: "$110 MXN",
+    imagen: "imagenes/polvo07zicatela.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Polvo Traslucido Bissu 02 Solmar Bissu",
+    descripcion: "Fórmula en polvo ultra fina y liviana, que se aplica suavemente, minimiza el brillo y lineas de expresión. Deja un acabado mate aterciopelado al rostro.",
+    precio: "$110 MXN",
+    imagen: "imagenes/polvo02solmar.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rimel Sexy Te Verde",
+    descripcion: "Fórmula enriquecida con té verde natural",
+    precio: "$35 MXN",
+    imagen: "imagenes/rimelteverde.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Rimel Diamond KJ",
+    descripcion: "Alargador, voluminizador y de alta definición sin dejar grumos",
+    precio: "$65 MXN",
+    imagen: "imagenes/rimeldiamondKJ.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Labial Bissu Mate",
+    descripcion: "Luce unos labios con efecto mate y sorpréndete con su larga duración",
+    precio: "$49 MXN",
+    imagen: "imagenes/labialmatebissu.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Mascarilla Cala",
+    descripcion: "Mantiene la piel balanceadamente natural rica en vitaminas y aminoacidos",
+    precio: "$30 MXN",
+    imagen: "imagenes/mascarillacala.jpg",
+    agotado: false
+  },
+  {
+    nombre: "Gel de Ceja PinkUp",
+    descripcion: "Efecto Soap Extrafijación",
+    precio: "$100 MXN",
+    imagen: "imagenes/gel de ceja.jpg",
     agotado: false
   }
 ];
